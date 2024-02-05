@@ -3,5 +3,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="green">#39d484</color>
+    <color name="strtclr">#39d484</color>
+    <color name="endclr">#53E88B</color>
 
 </resources>
