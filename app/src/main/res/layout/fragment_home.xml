@@ -34,6 +34,7 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/popularRecyclerView"
         android:layout_width="match_parent"
         android:layout_height="459dp"
         android:layout_marginTop="16dp"

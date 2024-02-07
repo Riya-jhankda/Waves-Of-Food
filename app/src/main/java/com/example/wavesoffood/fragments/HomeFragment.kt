@@ -6,11 +6,14 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.denzcoskun.imageslider.ImageSlider
 import com.denzcoskun.imageslider.constants.ScaleTypes
 import com.denzcoskun.imageslider.interfaces.ItemClickListener
 import com.denzcoskun.imageslider.models.SlideModel
 import com.example.wavesoffood.R
+import com.example.wavesoffood.adapter.PopularAdapter
 import java.text.FieldPosition
 
 // TODO: Rename parameter arguments, choose names that match
@@ -30,6 +33,7 @@ class HomeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
+        //this code line is used to inflate all the other layouts so they can be used in this fragment
         val rootView = inflater.inflate(R.layout.fragment_home, container, false)
 
         val imageList = ArrayList<SlideModel>()
@@ -52,6 +56,18 @@ class HomeFragment : Fragment() {
                 Toast.makeText(requireContext(),itemMessage,Toast.LENGTH_SHORT).show()
             }
         })
+
+        val foodName=listOf("Burger","Sandwitch","Cofee","Momo","Tikki")
+        val price=listOf("$5","$7","$9","$11","$13")
+        val popularfoodImages= listOf(R.drawable.food1,R.drawable.food2,R.drawable.food3,R.drawable.food4,R.drawable.food5)
+
+        //now wherever we wanted to use any other layout , we simply find its id using findViewById and then use that accordingly.
+        val popularRecyclerView = rootView.findViewById<RecyclerView>(R.id.popularRecyclerView)
+        val layoutManager = LinearLayoutManager(requireContext())
+        val adapter = PopularAdapter(foodName, popularfoodImages, price)
+        popularRecyclerView.layoutManager = layoutManager
+        popularRecyclerView.adapter = adapter
+
 
         return rootView
     }
