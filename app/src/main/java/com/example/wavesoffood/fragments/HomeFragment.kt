@@ -58,13 +58,14 @@ class HomeFragment : Fragment() {
         })
 
         val foodName=listOf("Burger","Sandwitch","Cofee","Momo","Tikki")
-        val price=listOf("$5","$7","$9","$11","$13")
+        val iprice=listOf("$5","$7","$9","$11","$13")
         val popularfoodImages= listOf(R.drawable.food1,R.drawable.food2,R.drawable.food3,R.drawable.food4,R.drawable.food5)
 
         //now wherever we wanted to use any other layout , we simply find its id using findViewById and then use that accordingly.
         val popularRecyclerView = rootView.findViewById<RecyclerView>(R.id.popularRecyclerView)
         val layoutManager = LinearLayoutManager(requireContext())
-        val adapter = PopularAdapter(foodName, popularfoodImages, price)
+        layoutManager.orientation = LinearLayoutManager.VERTICAL
+        val adapter = PopularAdapter(foodName, popularfoodImages, iprice)
         popularRecyclerView.layoutManager = layoutManager
         popularRecyclerView.adapter = adapter
 
