@@ -1,10 +1,12 @@
 package com.example.wavesoffood.fragments
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -18,6 +20,7 @@ import java.text.FieldPosition
 
 class HomeFragment : Fragment() {
 
+    @SuppressLint("MissingInflatedId")
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -34,6 +37,13 @@ class HomeFragment : Fragment() {
         val imageSlider = rootView.findViewById<ImageSlider>(R.id.image_slider)
         imageSlider.setImageList(imageList)
         imageSlider.setImageList(imageList, ScaleTypes.FIT)
+
+        val viewMenubtn= rootView.findViewById<TextView>(R.id.menuuu)
+        viewMenubtn.setOnClickListener{
+            val bottomSheetDialog=MenuBottomSheetFragment()
+            bottomSheetDialog.show(parentFragmentManager,"Test")
+
+        }
 
         imageSlider.setItemClickListener(object:ItemClickListener{
             override  fun doubleClick(position: Int){

@@ -26,10 +26,10 @@ class PopularAdapter(private val items: List<String>, private val image: List<In
         holder.bind(item, images, itemprice)
     }
 
-    class PopularViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-         val foodNameTextView = itemView.findViewById<TextView>(R.id.food_name_popular)
-         val foodImageView = itemView.findViewById<ImageView>(R.id.food_popular)
-         val cpTextView = itemView.findViewById<TextView>(R.id.cp_popular)
+    class PopularViewHolder(private val itemView: View) : RecyclerView.ViewHolder(itemView) {
+         val foodNameTextView = itemView.findViewById<TextView>(R.id.menu_name)
+         val foodImageView = itemView.findViewById<ImageView>(R.id.menu_img)
+         val cpTextView = itemView.findViewById<TextView>(R.id.menu_price)
 
         fun bind(item: String, images: Int, itemprice: String) {
             foodNameTextView.text = item
