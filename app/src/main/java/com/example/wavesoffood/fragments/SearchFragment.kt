@@ -82,19 +82,24 @@ class SearchFragment : Fragment() {
         })
     }
 
+
     private fun filterMenuItems(query: String) {
         filteredMenuFoodName.clear()
         filteredMenuItemPrice.clear()
         filteredMenuImage.clear()
+
         OriginalmenuFoodName.forEachIndexed { index, foodName ->
-            if (foodName.contains (query, ignoreCase = true)) {
+            if (foodName.contains(query, ignoreCase = true)) {
                 filteredMenuFoodName.add(foodName)
                 filteredMenuItemPrice.add(OriginalmenuItemPtice[index])
                 filteredMenuImage.add(OriginalmenuImage[index])
             }
         }
+
+        // Notify the adapter about the changes in the filtered lists
         adapter.notifyDataSetChanged()
     }
+
 
     companion object {
 
