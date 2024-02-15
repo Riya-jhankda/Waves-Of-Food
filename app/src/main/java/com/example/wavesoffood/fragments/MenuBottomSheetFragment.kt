@@ -33,9 +33,9 @@ class MenuBottomSheetFragment:BottomSheetDialogFragment() {
         }
 
         //creating the raw data to being inserted into the manuAdapter
-        val menuFoodName = listOf( "Burger", "sandwich", "momo", "item", "sandwich", "momo")
-        val menuItemPtice = listOf("$5", "$6", "$8", "$9","$10","$10")
-        val menuImage = listOf(R.drawable.food1,R.drawable.food2,R.drawable.food3,R.drawable.food4,R.drawable.food5,R.drawable.food2)
+        val menuFoodName = listOf( "Burger", "sandwich", "momo", "item", "sandwich", "momo","Burger", "sandwich", "momo", "item", "sandwich", "momo")
+        val menuItemPtice = listOf("$5", "$6", "$8", "$9","$10","$10","$5", "$6", "$8", "$9","$10","$10")
+        val menuImage = listOf(R.drawable.food1,R.drawable.food2,R.drawable.food3,R.drawable.food4,R.drawable.food5,R.drawable.food2,R.drawable.food1,R.drawable.food2,R.drawable.food3,R.drawable.food4,R.drawable.food5,R.drawable.food2)
 
         //creating an adapter that acts like a bridge between the rawdata and the recycler view of menuBottomSheetFragmnet layout
         val adapter= MenuAdapter(ArrayList(menuFoodName),ArrayList(menuItemPtice),ArrayList(menuImage))

@@ -24,7 +24,7 @@
         android:background="@android:color/transparent"
         android:fontFamily="@font/yeonsung_regular"
         android:gravity="center"
-        android:text="Cart"
+        android:text="Menu"
         android:textSize="24sp" />
 
     <androidx.recyclerview.widget.RecyclerView
