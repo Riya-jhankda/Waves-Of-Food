@@ -25,7 +25,7 @@ class NotificationAdapter(private var notification : ArrayList<String>, private 
         val pic = itemView.findViewById<ImageView>(R.id.notification_img)
 
         fun bind(position: Int) {
-            mssg.text=notification.toString()
+            mssg.text=notification[position]
             pic.setImageResource(notificationImage[position])
 
         }
