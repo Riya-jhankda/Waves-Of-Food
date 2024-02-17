@@ -38,7 +38,7 @@ class SearchFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val  rootView= inflater.inflate(R.layout.fragment_search, container, false)
-        adapter = MenuAdapter(ArrayList(OriginalmenuFoodName),ArrayList(OriginalmenuItemPtice),ArrayList(OriginalmenuImage))
+        adapter = MenuAdapter(ArrayList(OriginalmenuFoodName),ArrayList(OriginalmenuItemPtice),ArrayList(OriginalmenuImage), requireContext())
 
         val menuoriRecyclerView = rootView.findViewById<RecyclerView>(R.id.menuRecyclerView)
         val layoutManager = LinearLayoutManager(requireContext())

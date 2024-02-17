@@ -38,7 +38,7 @@ class MenuBottomSheetFragment:BottomSheetDialogFragment() {
         val menuImage = listOf(R.drawable.food1,R.drawable.food2,R.drawable.food3,R.drawable.food4,R.drawable.food5,R.drawable.food2,R.drawable.food1,R.drawable.food2,R.drawable.food3,R.drawable.food4,R.drawable.food5,R.drawable.food2)
 
         //creating an adapter that acts like a bridge between the rawdata and the recycler view of menuBottomSheetFragmnet layout
-        val adapter= MenuAdapter(ArrayList(menuFoodName),ArrayList(menuItemPtice),ArrayList(menuImage))
+        val adapter= MenuAdapter(ArrayList(menuFoodName),ArrayList(menuItemPtice),ArrayList(menuImage),requireContext())
 
         //refernce for the recycler view of menu
         val menuRecyclerView = rootView.findViewById<RecyclerView>(R.id.menuRecyclerView)

@@ -65,7 +65,7 @@ class HomeFragment : Fragment() {
         val popularRecyclerView = rootView.findViewById<RecyclerView>(R.id.popularRecyclerView)
         val layoutManager = LinearLayoutManager(requireContext())
         layoutManager.orientation = LinearLayoutManager.VERTICAL
-        val adapter = PopularAdapter(foodName, popularfoodImages, iprice)
+        val adapter = PopularAdapter(foodName, popularfoodImages, iprice,requireContext())
         popularRecyclerView.layoutManager = layoutManager
         popularRecyclerView.adapter = adapter
 
