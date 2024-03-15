@@ -12,7 +12,20 @@
           "package_name": "com.example.wavesoffood"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "112204475825-d7jvnbjacbndqrqf67lgqfif806tuv2c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.wavesoffood",
+            "certificate_hash": "cb6d0abf027da2dada5b3b99994f32af882462ff"
+          }
+        },
+        {
+          "client_id": "112204475825-f6jus1loq8c6estq8ihn53kh4i4tai37.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyCKZUky5h2vLImHFnysuboIWTRkomIoILI"
@@ -20,7 +33,12 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "112204475825-f6jus1loq8c6estq8ihn53kh4i4tai37.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }
