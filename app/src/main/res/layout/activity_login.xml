@@ -56,7 +56,7 @@
         app:layout_constraintTop_toTopOf="@+id/textView7" />
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/maile"
         android:layout_width="325dp"
         android:layout_height="57dp"
         android:layout_marginTop="32dp"
@@ -75,7 +75,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/passe"
         android:layout_width="325dp"
         android:layout_height="57dp"
         android:layout_marginTop="8dp"
@@ -88,9 +88,9 @@
         android:hint="Password"
         android:inputType="text"
         android:paddingLeft="5dp"
-        app:layout_constraintEnd_toEndOf="@+id/editTextText"
-        app:layout_constraintStart_toStartOf="@+id/editTextText"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+        app:layout_constraintEnd_toEndOf="@+id/maile"
+        app:layout_constraintStart_toStartOf="@+id/maile"
+        app:layout_constraintTop_toBottomOf="@+id/maile" />
 
     <TextView
         android:id="@+id/textView12"
@@ -99,9 +99,9 @@
         android:layout_marginTop="8dp"
         android:fontFamily="@font/yeonsung_regular"
         android:text="Or"
-        app:layout_constraintEnd_toEndOf="@+id/editText"
-        app:layout_constraintStart_toStartOf="@+id/editText"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintEnd_toEndOf="@+id/passe"
+        app:layout_constraintStart_toStartOf="@+id/passe"
+        app:layout_constraintTop_toBottomOf="@+id/passe" />
 
     <TextView
         android:id="@+id/textView13"
@@ -111,9 +111,9 @@
         android:fontFamily="@font/yeonsung_regular"
         android:text="Continue with"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/editText"
-        app:layout_constraintStart_toStartOf="@+id/editText"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintEnd_toEndOf="@+id/passe"
+        app:layout_constraintStart_toStartOf="@+id/passe"
+        app:layout_constraintTop_toBottomOf="@+id/passe" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button"
@@ -141,11 +141,11 @@
         android:fontFamily="@font/lato_bold"
         android:paddingLeft="15dp"
         android:text="Facebook"
-        app:layout_constraintEnd_toEndOf="@+id/editText"
+        app:layout_constraintEnd_toEndOf="@+id/passe"
         app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button3"
+        android:id="@+id/logine"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="120dp"
@@ -169,10 +169,10 @@
         android:textAlignment="center"
         android:textColor="@color/green"
         android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="@+id/logine"
         app:layout_constraintHorizontal_bias="0.508"
-        app:layout_constraintStart_toStartOf="@+id/button3"
-        app:layout_constraintTop_toBottomOf="@+id/button3" />
+        app:layout_constraintStart_toStartOf="@+id/logine"
+        app:layout_constraintTop_toBottomOf="@+id/logine" />
 
     <TextView
         android:id="@+id/textView15"
