@@ -19,6 +19,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:menu="@menu/menu" />
 
+    <Switch
+        android:id="@+id/theme_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/notificationBell"
+        app:layout_constraintEnd_toStartOf="@+id/notificationBell"
+        app:layout_constraintStart_toEndOf="@+id/textView20"
+        />
+
     <TextView
         android:id="@+id/textView20"
         android:layout_width="wrap_content"
@@ -38,9 +47,10 @@
         android:id="@+id/notificationBell"
         android:layout_width="24dp"
         android:layout_height="24dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="28dp"
         android:src="@drawable/icon__4_"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.739"
         app:layout_constraintStart_toEndOf="@+id/textView20"
         app:layout_constraintTop_toTopOf="parent" />
 

@@ -54,4 +54,5 @@ dependencies {
     //Firebase dependies
     implementation ("com.google.firebase:firebase-bom:32.7.4")
     implementation("com.google.android.gms:play-services-auth:21.0.0")
+
 }
